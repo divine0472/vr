@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGREAT VR</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Header (Bootstrap) -->
+     
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid px-4 py-0 d-flex justify-content-between align-items-center">
+          <h1 class="text-primary fs-3 fw-bold">DGREAT VR</h1>
+          <!-- Offcanvas Toggle for Mobile-->
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Offcanvas Menu -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-primary fs-4 fw-bold" id="offcanvasNavbarLabel">DGREAT VR</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-dark">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link text-dark">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#testimonials" class="nav-link text-dark">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#gallery" class="nav-link text-dark">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link text-dark">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Regular Navigation for Larger Screens -->
+          <nav class="d-none d-lg-block">
+            <ul class="nav">
+              <li class="nav-item"><a href="#" class="nav-link text-dark">Home</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link text-dark">About</a></li>
+              <li class="nav-item"><a href="#testimonials" class="nav-link text-dark">Testimonials</a></li>
+              <li class="nav-item"><a href="#gallery" class="nav-link text-dark">Gallery</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link text-dark">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </nav>      
+
+    <!-- Hero Section (Tailwind CSS) -->
+    <section id="hero" class="bg-green-600 text-white text-center py-20">
+        <h2 class="text-4xl font-bold mb-4">Welcome to Dgreat VR</h2>
+        <p class="text-lg mb-6">Experience reality at the palm of your hands.</p>
+        <a href="#" class="bg-white text-green-600 font-semibold px-6 py-3 rounded-md hover:bg-gray-200 transition duration-300">
+            SHOP NOW
+        </a>
+    </section>]
+
+    <!-- Features Section (Tailwind CSS) -->
+    <section id="about" class="container mx-auto px-4 py-16">
+        <h3 class="text-3xl font-bold text-center mb-10">About Us</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="image/vr4.jpg" alt="VR Headsets" class="mb-4">
+                <h4 class="font-bold text-lg mb-2">Sales of VR Headsets</h4>
+                <p>We sell all types of virtual reality headsets.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="image/vr6.jpg" alt="VR Games" class="mb-4">
+                <h4 class="font-bold text-lg mb-2">Sales of VR Games</h4>
+                <p>We sell all types of virtual reality games.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="image/vr7.jpg" alt="Quality" class="mb-4">
+                <h4 class="font-bold text-lg mb-2">Quality</h4>
+                <p>We have the best quality score rating.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="image/vr8.jpg" alt="Delivery" class="mb-4">
+                <h4 class="font-bold text-lg mb-2">Delivery</h4>
+                <p>We deliver within 7-12 working days in Nigeria.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (Bootstrap Carousel) -->
+    <section id="testimonials" class="bg-gray-200 py-16">
+        <div class="container">
+            <h3 class="text-3xl font-bold text-center mb-10">Testimonials</h3>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="text-center">
+                            <p class="italic">"Excellent service, highly recommend!"</p>
+                            <small>- Esther, Lagos</small>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <p class="italic">"Truly a wonderful gaming experience."</p>
+                            <small>- John, Abuja</small>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <p class="italic">"Outstanding experience and quality."</p>
+                            <small>- Emeka, Enugu</small>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+     <!-- Image Gallery Section -->
+     <section id="gallery"  class="container mx-auto px-4 py-16">
+        <h3 class="text-3xl font-bold text-center mb-10">Our Gallery</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <img src="image/vr3.jpg" alt="Gallery Image" class="rounded-lg shadow-md">
+            <img src="image/vr5.jpg" alt="Gallery Image" class="rounded-lg shadow-md">
+            <img src="image/vr9.jpg" alt="Gallery Image" class="rounded-lg shadow-md">
+            <img src="image/vr10.jpg" alt="Gallery Image" class="rounded-lg shadow-md">
+            <img src="image/vr11.jpg" alt="Gallery Image" class="rounded-lg shadow-md">
+            <img src="image/vr12.jpg" alt="Gallery Image" class="rounded-lg shadow-md">
+            <img src="image/vr13.jpg" alt="Gallery Image" class="rounded-lg shadow-md">
+            <img src="image/vr14.jpg" alt="Gallery Image" class="rounded-lg shadow-md">
+        </div>
+    </section>
+
+    <!-- Footer (Tailwind CSS) -->
+    <footer id="contact"  class="bg-gray-900 text-gray-200 py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Dgreat. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-black-500">X</a>
+                <a href="#" class="hover:text-blue-700">Facebook</a>
+                <a href="#" class="hover:text-pink-500">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
